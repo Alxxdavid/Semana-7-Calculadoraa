@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Batalla de Robots</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🤖 BATALLA DE ROBOTS ⚡</h1>
+
+<img src="https://media.tenor.com/2uyENRmiUt0AAAAC/robot-fight.gif" width="600">
+
+<br><br>
+
+<div id="stats">
+
+  <!-- ROBOT JUGADOR -->
+  <div class="stat-bloque">
+    <h3>ROBOT ALFA</h3>
+
+    <p>Integridad: <span id="p1-hp">150</span></p>
+    <div class="barra-track">
+      <div id="p1-hp-barra" class="hp"></div>
+    </div>
+
+    <p>Energía: <span id="p1-energia">100</span></p>
+    <div class="barra-track">
+      <div id="p1-energia-barra" class="energia"></div>
+    </div>
+  </div>
+
+  <!-- ROBOT ENEMIGO -->
+  <div class="stat-bloque">
+    <h3>ROBOT OMEGA</h3>
+
+    <p>Integridad: <span id="p2-hp">150</span></p>
+    <div class="barra-track">
+      <div id="p2-hp-barra" class="hp"></div>
+    </div>
+
+    <p>Energía: <span id="p2-energia">100</span></p>
+    <div class="barra-track">
+      <div id="p2-energia-barra" class="energia"></div>
+    </div>
+  </div>
+
+</div>
+
+<br>
+
+<div id="acciones">
+  <button onclick="accion('laser')">Disparo Láser</button>
+  <button onclick="accion('misil')">Misil</button>
+  <button onclick="accion('escudo')">Escudo</button>
+  <button onclick="accion('energia')">Recargar Energía</button>
+  <button onclick="reiniciar()">Reiniciar</button>
+</div>
+
+<br><br>
+
+<div id="log"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
